@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+:root {
+    --darkcolor: #2e2d33;
+    --lightcolor: #dec26f;
+}
+
+nav {
+    background-color: var(--darkcolor);
+}
+
+.logo {
+    object-fit: cover;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+.navbar-toggler {
+    border-color: var(--lightcolor);
+    color: #dec26f !important;
+}
+
+.navbar-toggler-icon {
+    color: #dec26f !important;
+}
+
+.navbar-toggler:focus {
+    color: #dec26f;
+    box-shadow: none;
+}
+
+.nav-link {
+    color: var(--lightcolor);
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.nav-link:hover {
+    color: var(--lightcolor);
+}
+
+.nav-link:focus {
+    color: var(--lightcolor);
+}
+
+.btn-login {
+    color: var(--lightcolor);
+    border-color: #dec26f;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.btn-login:hover {
+    color: var(--darkcolor);
+    background-color: #dec26f;
+    border-color: #dec26f;
+}
+
+.btn-login:focus {
+    color: var(--lightcolor);
+}
+
+.btn-sign {
+    background-color: #dec26f;
+    color: #2e2d33;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.btn-sign:hover {
+    border-color: #dec26f;
+    color: #dec26f;
+}
+
+.shop-style {
+    text-align: center;
+    margin-top: 60px;
+    text-transform: uppercase;
+    padding-right: 4px;
+}
+
+.browse-by-collection {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: -10px;
+    padding-bottom: 50px;
+    padding-right: 4px;
+}
+
+.four-images {
+    padding: 4px;
+}
+
+.cards-image {
+    width: 250px;
+    height: 400px;
+    object-fit: cover;
+    margin-left: 40px;
+}
+
+.next-arrow {
+    margin-top: -60px;
+    z-index: 99;
+    font-size: 40px;
+    position: absolute;
+    right: 4%;
+    top: 243px;
+    color: #bfbab6;
+}
+
+.next-arrow:hover {
+    color: black;
+}
+
+.previous-arrow {
+    margin-top: -255px;
+    z-index: 99;
+    font-size: 40px;
+    color: #bfbab6;
+    position: absolute;
+    left: 3%;
+    top: 435px;
+}
+
+.previous-arrow:hover {
+    color: black;
+}
+
+.price {
+    padding-bottom: 50px;
+}
+
+.two-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.first_image {
+    width: 100%;
+}
+
+.second_image {
+    width: 100%;
+}
+
+.first-image-name {
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 20px
+}
+
+.first-image-text {
+    padding-left: 20px;
+    padding-right: 200px;
+    font-size: 15px;
+}
+
+.c-button {
+    text-transform: uppercase;
+    margin-left: 20px;
+    border: 1px solid var(--darkcolor);
+    color: black;
+    margin-top: 10px;
+    padding: 10px 50px 10px 50px;
+    font-weight: 500;
+    border-radius: 1px;
+    margin-bottom: 120px;
+}
+
+.c-button:hover {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+}
+
+
+@media screen and (max-width:425px) {
+    .two-images {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.first-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.warranty-icon {
+    max-width: 80px;
+    display: flex;
+    margin-right: 10px;
+    display: flex;
+    width: 100%;
+}
+
+.warranty-text {
+    text-transform: uppercase;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.second-icon {
+    display: flex;
+}
+
+.cart-icon {
+    width: 100%;
+    max-width: 80px;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+.cart-text {
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.third-icon {
+    display: flex;
+}
+
+.lock {
+    width: 100%;
+    max-width: 80px;
+    margin-right: 10px;
+}
+
+.lock-text {
+    text-transform: uppercase;
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-right: 30px;
+}

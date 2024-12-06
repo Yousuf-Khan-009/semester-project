@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>shop page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/buypage.css">
+</head>
+
+<body>
+  
+  <div class="navbar">
+    <button class="btn btn-text-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+      aria-controls="staticBackdrop">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+      aria-labelledby="staticBackdropLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          I will not close if you click outside of me.
+        </div>
+      </div>jkjn
+    </div>
+    <img src="images/without background logo.png" alt="" class="logo">
+
+    <!-- Button to open the search modal -->
+    <button class="btn " data-bs-toggle="modal" data-bs-target="#searchModal">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="searchModalLabel">Search</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <input type="text" class="form-control" placeholder="Type your search here...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Main-->
+  <div class="mian">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 box">
+          <img src="image-1.webp" alt="#" class="">
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 box-2">
+          <div class="price-sec">
+            <h3>skeleton 002</h3>
+            <span>Rs.90000</span>
+          </div>
+          <div class="d-grid gap-2">
+            <label>40 mm</label>
+            <button class="btn shop-btn" type="button">Buy Now</button>
+          </div>
+          <div class="small-img">
+            <img src="image-1.webp" alt="#" class="small">
+            <img src="small-image-2.avif" alt="#" class="small">
+          </div>
+          <div class="shop-doc">
+            <h1 class="doc-heading">STEEL</h1>
+            <p class="doc-introduction">Discover the perfect blend of style, craftsmanship, and innovation with.
+              Designed for those who appreciate the finer things in life, this timepiece transcends mere functionality,
+              offering an unparalleled experience of luxury and reliability.
+              Crafted with the utmost attention to detail, combines superior materials with cutting-edge technology.
+              Whether you're attending a high-profile event or simply appreciating everyday elegance, this watch is
+              built to make a statement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="shop-img.webp" alt="">
+
+
+
+    <!-- Bootstrap JS, Popper.js, and jQuery (required for Bootstrap modals) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+
+</body>
+
+</html>

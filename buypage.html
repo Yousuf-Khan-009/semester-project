@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>shop page</title>
+  <title>Bootstrap demo</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,89 +15,78 @@
 </head>
 
 <body>
-  
-  <div class="navbar">
-    <button class="btn btn-text-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-      aria-controls="staticBackdrop">
-      <i class="fa-solid fa-bars"></i>
-    </button>
 
-    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
-      aria-labelledby="staticBackdropLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div>
-          I will not close if you click outside of me.
-        </div>
-      </div>jkjn
+
+  <nav>
+    <div class="logo">
+      <img src="images/without background logo.png" alt="Logo">
     </div>
-    <img src="images/without background logo.png" alt="" class="logo">
 
-    <!-- Button to open the search modal -->
-    <button class="btn " data-bs-toggle="modal" data-bs-target="#searchModal">
-      <i class="fa-solid fa-magnifying-glass"></i>
-    </button>
-    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="search-icon ms-auto">
+      <i class="fa-solid fa-magnifying-glass" data-bs-target="#exampleModal" data-bs-toggle="modal"></i>
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="searchModalLabel">Search</h5>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Search</h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <input type="text" class="form-control" placeholder="Type your search here...">
+            <input type="text" placeholder="Search">
           </div>
+          <div class="modal-footer">
+            <button type="button" class="btn custom-close" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn custom-save">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6 col-md-6">
+        <div class="image">
+          <img src="images/pixelcut-export (3).png" alt="Image">
+        </div>
+      </div>
+      <div class="col-12 col-lg-6 col-md-6">
+        <div class="details">
+          <p class="exclusive">exclusive access</p>
+          <div class="stars">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star-half'></i>
+          </div>
+          <div class="watch-details">
+            <h1>Chronograph</h1>
+            <p class="cancel-price">
+              rs.120,000.00
+            </p>
+            <p class="discount-price">
+              rs.90,000.00
+            </p>
+            <p class="color">color: black</p>
+            <div class="watch-image"><img src="images/pixelcut-export (3).png" alt="Image" class="watch-image"></div>
+            <a href="buynow.html" style="text-decoration: none;">
+              <button class="buy-now">buy now</button>
+            </a>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
-  <!--Main-->
-  <div class="mian">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-6 col-md-6 col-sm-12 box">
-          <img src="image-1.webp" alt="#" class="">
-        </div>
-        <div class="col-12 col-lg-6 col-md-6 col-sm-12 box-2">
-          <div class="price-sec">
-            <h3>skeleton 002</h3>
-            <span>Rs.90000</span>
-          </div>
-          <div class="d-grid gap-2">
-            <label>40 mm</label>
-            <button class="btn shop-btn" type="button">Buy Now</button>
-          </div>
-          <div class="small-img">
-            <img src="image-1.webp" alt="#" class="small">
-            <img src="small-image-2.avif" alt="#" class="small">
-          </div>
-          <div class="shop-doc">
-            <h1 class="doc-heading">STEEL</h1>
-            <p class="doc-introduction">Discover the perfect blend of style, craftsmanship, and innovation with.
-              Designed for those who appreciate the finer things in life, this timepiece transcends mere functionality,
-              offering an unparalleled experience of luxury and reliability.
-              Crafted with the utmost attention to detail, combines superior materials with cutting-edge technology.
-              Whether you're attending a high-profile event or simply appreciating everyday elegance, this watch is
-              built to make a statement.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <img src="shop-img.webp" alt="">
 
 
 
-    <!-- Bootstrap JS, Popper.js, and jQuery (required for Bootstrap modals) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

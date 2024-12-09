@@ -16,6 +16,12 @@ nav {
     background-color: var(--darkcolor);
 }
 
+.navbar{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
 .logo {
     object-fit: cover;
 }
@@ -60,6 +66,12 @@ nav {
     margin-left: 20px;
 }
 
+@media screen and (max-width:425px) {
+    .btn-login{
+        margin-bottom: 10px;
+    }
+}
+
 .btn-login:hover {
     color: var(--darkcolor);
     background-color: #dec26f;
@@ -83,6 +95,10 @@ nav {
     color: #dec26f;
 }
 
+.c-banner{
+    margin-top: 60px;
+}
+
 .shop-style {
     text-align: center;
     margin-top: 60px;
@@ -99,7 +115,37 @@ nav {
     padding-right: 4px;
 }
 
-.four-images {
+.custom-first-images{
+    width: 100%;
+    max-width: 330px;
+    height: 333px;
+    object-fit: cover;
+    padding-left: 16px;
+    padding-right: 5px;
+}
+
+
+.custom-second-images{
+    width: 100%;
+    max-width: 330px;
+    height: 334px;
+    object-fit: cover;
+    padding: 4px;
+}
+
+.custom-third-images{
+    width: 100%;
+    max-width: 330px;
+    height: 334px;
+    object-fit: cover;
+    padding: 4px;
+}
+
+.custom-fourth-images{
+    width: 100%;
+    max-width: 330px;
+    height: 334px;
+    object-fit: cover;
     padding: 4px;
 }
 
@@ -117,25 +163,17 @@ nav {
     position: absolute;
     right: 4%;
     top: 243px;
-    color: #bfbab6;
-}
-
-.next-arrow:hover {
-    color: black;
+    color: black
 }
 
 .previous-arrow {
     margin-top: -255px;
     z-index: 99;
     font-size: 40px;
-    color: #bfbab6;
+    color:black;
     position: absolute;
     left: 3%;
     top: 435px;
-}
-
-.previous-arrow:hover {
-    color: black;
 }
 
 .price {
